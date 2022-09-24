@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../widget/dialog_widget.dart';
+
+const String dialog = 'The functionality about login will do asap!';
+const String button = 'Click here for login';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -31,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               const Text(
                 'Benvenuto! Ecco la schermata di login',
-                style: TextStyle(fontSize: 22, color: Colors.blueGrey, fontWeight: FontWeight.w700),
+                style: TextStyle(fontSize: 22, color: Colors.black38, fontWeight: FontWeight.w700),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
@@ -57,10 +62,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 40,
               ),
-              ElevatedButton(
-                child: const Text('Click on me'),
-                onPressed: () {},
-              )
+              const CustomDialog(textDialog: dialog, textButton: button),
             ],
           ),
         ),
@@ -68,3 +70,5 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
+///In the future, will add a dialog that appears when the user click on the button
