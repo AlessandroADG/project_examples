@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_example/login_application/pages/login_page.dart';
+import 'package:project_example/registration_flow/pages/registration_page.dart';
 
 void main() {
-  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage()));
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: RegistrationPage()));
 }
